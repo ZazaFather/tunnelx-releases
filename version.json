@@ -1,0 +1,6 @@
+﻿{
+  "version": "2.5.0",
+  "build": 2501,
+  "downloadUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.0/TunnelX-Windows-Portable.exe",
+  "notes": "TunnelX v2.5.0 для Windows — автообновление, балансировка серверов (leastLoad) и синхронизация лимита устройств"
+}
