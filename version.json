@@ -1,6 +1,6 @@
 {
-  "version": "2.5.0",
-  "build": 2502,
-  "download_url": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.0/TunnelX-Windows-Portable.exe",
-  "notes": "Исправлены тройное открытие Telegram при входе и авто-выход при занятых слотах устройств"
+    "version":  "2.5.0",
+    "build":  2502,
+    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.0/TunnelX-Windows-Portable.exe",
+    "notes":  "TunnelX v2.5.0 (build 2502)"
 }
