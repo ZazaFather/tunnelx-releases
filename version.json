@@ -1,9 +1,9 @@
 {
-    "build":  2560,
-    "version":  "2.5.6",
-    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.6/TunnelX-Setup.exe",
-    "publishedAt":  "2026-11-10T19:05:00Z",
-    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.6/TunnelX-Windows-Portable.exe",
-    "apkUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.6/TunnelX.apk",
-    "notes":  "Добавлена сквозная система логирования и диагностики ошибок (Windows / Android / iOS / macOS): автоматический перехват вылетов, stderr ядра Xray и разрывов соединения с отправкой в @alert247365_bot, а также окно просмотра логов и кнопка отправки отчёта в настройках приложения."
+    "build":  2570,
+    "version":  "2.5.7",
+    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.7/TunnelX-Setup.exe",
+    "publishedAt":  "2026-11-10T20:00:00Z",
+    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.7/TunnelX-Windows-Portable.exe",
+    "apkUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.7/TunnelX.apk",
+    "notes":  "Автоматический обход блокировок операторов по 3 зеркалам подписки (sub.scription.info, wl.scription.info, sub.tunnelx.space), устранение 10-минутных обрывов мостов, разблокировка всех 7 RU-релеев на Android/iOS/macOS и усиленная стабильность туннеля."
 }
