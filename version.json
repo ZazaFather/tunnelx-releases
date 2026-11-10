@@ -1,9 +1,9 @@
 {
-    "build":  2550,
-    "version":  "2.5.5",
-    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.5/TunnelX-Setup.exe",
-    "publishedAt":  "2026-11-10T18:23:19Z",
-    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.5/TunnelX-Windows-Portable.exe",
-    "apkUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.5/TunnelX.apk",
-    "notes":  "Исправлены самопроизвольные отключения VPN через 10–20 минут на ПК и смартфонах (TCP Keep-Alive, защита активного туннеля от фоновых проверок устройств, Android WakeLock/WifiLock и авто-восстановление ядра Xray)."
+    "build":  2560,
+    "version":  "2.5.6",
+    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.6/TunnelX-Setup.exe",
+    "publishedAt":  "2026-11-10T19:05:00Z",
+    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.6/TunnelX-Windows-Portable.exe",
+    "apkUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.6/TunnelX.apk",
+    "notes":  "Добавлена сквозная система логирования и диагностики ошибок (Windows / Android / iOS / macOS): автоматический перехват вылетов, stderr ядра Xray и разрывов соединения с отправкой в @alert247365_bot, а также окно просмотра логов и кнопка отправки отчёта в настройках приложения."
 }
