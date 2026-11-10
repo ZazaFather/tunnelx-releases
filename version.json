@@ -1,8 +1,8 @@
 {
-    "build":  2530,
-    "version":  "2.5.3",
-    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.3/TunnelX-Setup.exe",
-    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.3/TunnelX-Windows-Portable.exe",
-    "publishedAt":  "2026-11-10T17:33:23Z",
-    "notes":  "Точный список приложений в раздельном туннелировании (только реально установленные программы и активные оконные приложения без фоновых служб), автовыбор лучшего сервера по пингу и обновление в 1 клик."
+    "build":  2540,
+    "version":  "2.5.4",
+    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.4/TunnelX-Setup.exe",
+    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.4/TunnelX-Windows-Portable.exe",
+    "publishedAt":  "2026-11-10T17:43:36Z",
+    "notes":  "Авто-сервер выбран по умолчанию при запуске приложения, точный список программ в туннелировании приложений (без фоновых служб) и обновление в 1 клик."
 }
