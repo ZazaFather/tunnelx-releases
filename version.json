@@ -1,1 +1,7 @@
-{"version":"2.5.1","build":2510,"downloadUrl":"https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.1/TunnelX-Windows-Portable.exe","setupUrl":"https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.1/TunnelX-Setup.exe","notes":"TunnelX v2.5.1"}
+{
+    "notes":  "TunnelX v2.5.2: автовыбор самого быстрого сервера по пингу при запуске, проверка реального наличия Telegram Desktop с автоматическим открытием в браузере при отсутствии клиента, права Администратора для TUN и стабильный двухэтапный замер пинга без ложных срабатываний антивирусов.",
+    "build":  2520,
+    "version":  "2.5.2",
+    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.2/TunnelX-Windows-Portable.exe",
+    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.2/TunnelX-Setup.exe"
+}
