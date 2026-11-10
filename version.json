@@ -1,9 +1,9 @@
 {
-    "build":  2570,
-    "version":  "2.5.7",
-    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.7/TunnelX-Setup.exe",
-    "publishedAt":  "2026-11-10T20:00:00Z",
-    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.7/TunnelX-Windows-Portable.exe",
-    "apkUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.7/TunnelX.apk",
-    "notes":  "Автоматический обход блокировок операторов по 3 зеркалам подписки (sub.scription.info, wl.scription.info, sub.tunnelx.space), устранение 10-минутных обрывов мостов, разблокировка всех 7 RU-релеев на Android/iOS/macOS и усиленная стабильность туннеля."
+    "build":  2580,
+    "version":  "2.5.8",
+    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.8/TunnelX-Setup.exe",
+    "publishedAt":  "2026-11-11T00:40:00Z",
+    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.8/TunnelX-Windows-Portable.exe",
+    "apkUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.8/TunnelX.apk",
+    "notes":  "Хотфикс v2.5.8: исправление паники при сортировке узлов Xray, устранение бесконечного цикла кнопки «Обновить», авто-обновление ядра Xray-core для TUN и ускоренный старт Wintun."
 }
