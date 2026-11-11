@@ -25,6 +25,13 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: '1.24'
+          cache: false
+
+      - name: Cache iOS XCFrameworks
+        uses: actions/cache@v4
+        with:
+          path: apple/Frameworks
+          key: tunnelx-ios-xcframeworks-xcode26-v1-${{ hashFiles('apple/libtunnelx_xray/go.mod', 'apple/scripts/build_xcframeworks.sh') }}
 
       - name: Install XcodeGen
         run: |
