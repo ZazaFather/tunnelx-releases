@@ -1,9 +1,9 @@
 {
-    "build":  2620,
-    "version":  "2.6.2",
-    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.2/TunnelX-Setup.exe",
-    "publishedAt":  "2026-11-11T11:50:00Z",
-    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.2/TunnelX-Windows-Portable.exe",
-    "apkUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.2/TunnelX.apk",
-    "notes":  "Обновление v2.6.2: улучшенное отображение статуса доступного обновления в настройках (зелёный индикатор «Доступна новая версия приложения» без дублирования заголовка и обрезки текста, номер версии на кнопке «Обновить до v...») + все защиты полигона «АК-47»."
+    "build":  2630,
+    "version":  "2.6.3",
+    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.3/TunnelX-Setup.exe",
+    "publishedAt":  "2026-11-11T12:15:00Z",
+    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.3/TunnelX-Windows-Portable.exe",
+    "apkUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.3/TunnelX.apk",
+    "notes":  "Обновление v2.6.3: бесшовная авторизация через Telegram Web (web.telegram.org) при отсутствии установленного приложения Telegram на ПК или смартфоне + кнопка входа через сайт Telegram Web прямо на экране ожидания."
 }
