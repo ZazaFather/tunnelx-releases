@@ -1,9 +1,9 @@
 {
-    "build":  2590,
-    "version":  "2.5.9",
-    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.9/TunnelX-Setup.exe",
-    "publishedAt":  "2026-11-11T10:30:00Z",
-    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.9/TunnelX-Windows-Portable.exe",
-    "apkUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.5.9/TunnelX.apk",
-    "notes":  "Обновление v2.5.9: кольцевая ротация адаптеров Wintun (TunnelX1..TunnelX4) для мгновенного переподключения и смены серверов в режиме Шлюз (TUN) без 15-секундной задержки Windows PnP, сериализация подключений, запоминание рабочего зеркала подписки и очистка устаревших параметров Xray 26.10.31."
+    "build":  2600,
+    "version":  "2.6.0",
+    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.0/TunnelX-Setup.exe",
+    "publishedAt":  "2026-11-11T10:50:00Z",
+    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.0/TunnelX-Windows-Portable.exe",
+    "apkUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.0/TunnelX.apk",
+    "notes":  "Обновление v2.6.0: штампы даты и времени [ДД.ММ ЧЧ:ММ:СС МСК] и разделители сессий в логах диагностики, защита от фонового всплытия окна обновления и фантомных иконок в трее, ротация адаптеров Wintun (TunnelX1..4) и умный выбор зеркала подписки."
 }
