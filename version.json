@@ -1,9 +1,9 @@
 {
-    "build":  2610,
-    "version":  "2.6.1",
-    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.1/TunnelX-Setup.exe",
-    "publishedAt":  "2026-11-11T11:40:00Z",
-    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.1/TunnelX-Windows-Portable.exe",
-    "apkUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.1/TunnelX.apk",
-    "notes":  "Обновление v2.6.1 (АК-47): авто-проверка и восстановление целостности конфигурации Xray (работа без geosite/geoip.dat, защита от висячих балансировщиков, поддержка network=raw), авто-обход занятых локальных портов, авто-восстановление туннеля после сна/гибернации ПК и 100% стресс-тестирование всех 444 режимов."
+    "build":  2620,
+    "version":  "2.6.2",
+    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.2/TunnelX-Setup.exe",
+    "publishedAt":  "2026-11-11T11:50:00Z",
+    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.2/TunnelX-Windows-Portable.exe",
+    "apkUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.2/TunnelX.apk",
+    "notes":  "Обновление v2.6.2: улучшенное отображение статуса доступного обновления в настройках (зелёный индикатор «Доступна новая версия приложения» без дублирования заголовка и обрезки текста, номер версии на кнопке «Обновить до v...») + все защиты полигона «АК-47»."
 }
