@@ -1,9 +1,9 @@
 {
-    "build":  2630,
-    "version":  "2.6.3",
-    "setupUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.3/TunnelX-Setup.exe",
-    "publishedAt":  "2026-11-11T12:15:00Z",
-    "downloadUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.3/TunnelX-Windows-Portable.exe",
-    "apkUrl":  "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.3/TunnelX.apk",
-    "notes":  "Обновление v2.6.3: бесшовная авторизация через Telegram Web (web.telegram.org) при отсутствии установленного приложения Telegram на ПК или смартфоне + кнопка входа через сайт Telegram Web прямо на экране ожидания."
+    "build": 2640,
+    "version": "2.6.4",
+    "setupUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.4/TunnelX-Setup.exe",
+    "publishedAt": "2026-11-13T22:40:00Z",
+    "downloadUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.4/TunnelX-Windows-Portable.exe",
+    "apkUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.4/TunnelX.apk",
+    "notes": "Обновление v2.6.4: бесплатный Telegram через несколько серверов с автопереключением, более быстрое подключение, шторка локаций больше не открывается при сворачивании приложения свайпом снизу."
 }
