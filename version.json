@@ -1,9 +1,9 @@
 {
-    "build": 2650,
-    "version": "2.6.5",
-    "setupUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-Setup.exe",
-    "publishedAt": "2026-11-14T21:25:00Z",
-    "downloadUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-Windows-Portable.exe",
-    "apkUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX.apk",
-    "notes": "Обновление v2.6.5: ядро встроено в программу — подключение и вход через Telegram работают сразу, без загрузки ядра; плавнее подключение и переключение серверов."
+    "build": 2640,
+    "version": "2.6.4",
+    "setupUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.4/TunnelX-Setup.exe",
+    "publishedAt": "2026-11-13T22:40:00Z",
+    "downloadUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.4/TunnelX-Windows-Portable.exe",
+    "apkUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.4/TunnelX.apk",
+    "notes": "Обновление v2.6.4: бесплатный Telegram через несколько серверов с автопереключением, более быстрое подключение, шторка локаций больше не открывается при сворачивании приложения свайпом снизу."
 }
