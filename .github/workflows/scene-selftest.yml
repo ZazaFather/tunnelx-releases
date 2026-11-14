@@ -1,0 +1,48 @@
+name: Scene self-test (Metal 3D engine)
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'tunnelx-client ref'
+        required: false
+        default: 'main'
+
+permissions:
+  contents: read
+
+jobs:
+  selftest:
+    name: Compile Metal shader, compare uniforms with JS, render test frames
+    runs-on: macos-15
+    timeout-minutes: 20
+    steps:
+      - name: Checkout tunnelx-client source via Deploy Key
+        uses: actions/checkout@v4
+        with:
+          repository: ZazaFather/tunnelx-client
+          ref: ${{ github.event.inputs.ref }}
+          ssh-key: ${{ secrets.CLIENT_DEPLOY_KEY }}
+
+      - name: Typecheck iOS app sources (iphoneos SDK)
+        run: |
+          xcodebuild -version
+          xcrun -sdk iphoneos swiftc -typecheck -target arm64-apple-ios16.0 \
+            apple/Shared/*.swift apple/TunnelXApp/*.swift apple/TunnelXApp/Scene/*.swift 2>&1 | tee typecheck.txt
+          test ${PIPESTATUS[0]} -eq 0
+
+      - name: Build and run scene self-test (macOS, Metal)
+        run: |
+          mkdir -p out
+          cp typecheck.txt out/ || true
+          swiftc -O -o scene_selftest apple/TunnelXApp/Scene/SceneMath.swift apple/TunnelXApp/Scene/SceneShaderSource.swift apple/scripts/scene_selftest/main.swift
+          system_profiler SPDisplaysDataType | head -20 | tee out/gpu.txt
+          ./scene_selftest apple/scripts/scene_selftest/cases.json out 2>&1 | tee out/log.txt
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scene-selftest
+          path: out
+          retention-days: 7
