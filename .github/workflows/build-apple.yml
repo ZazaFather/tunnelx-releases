@@ -52,16 +52,17 @@ jobs:
           chmod +x ./apple/scripts/build_xcframeworks.sh ./apple/scripts/build_all_apple.sh
           ./apple/scripts/build_all_apple.sh
 
-      - name: Publish Notarized TunnelX-macOS.dmg to v2.6.3 Release
+      - name: Publish Notarized TunnelX-macOS.dmg to Latest Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release upload v2.6.3 artifacts-apple/TunnelX-macOS.dmg --repo ZazaFather/tunnelx-releases --clobber
+          TAG=$(gh release view --repo ZazaFather/tunnelx-releases --json tagName -q .tagName 2>/dev/null || echo "v2.6.5")
+          gh release upload "${TAG}" artifacts-apple/TunnelX-macOS.dmg --repo ZazaFather/tunnelx-releases --clobber || true
 
       - name: Upload Apple Release Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: TunnelX-Apple-v2.6.3
+          name: TunnelX-Apple-v2.6.5
           path: |
             artifacts-apple/TunnelX-iOS.ipa
             artifacts-apple/TunnelX-macOS.dmg
