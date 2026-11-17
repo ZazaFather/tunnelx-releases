@@ -1,0 +1,74 @@
+name: Build & Publish TunnelX Windows Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/build-windows.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows:
+    name: Build TunnelX Windows x64
+    runs-on: windows-latest
+    steps:
+      - name: Checkout tunnelx-client source via Deploy Key
+        uses: actions/checkout@v4
+        with:
+          repository: ZazaFather/tunnelx-client
+          ssh-key: ${{ secrets.CLIENT_DEPLOY_KEY }}
+
+      - name: Setup Rust stable
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Cargo registry & build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            src-tauri/target
+          key: tunnelx-win-cargo-${{ hashFiles('src-tauri/Cargo.lock', 'src-tauri/Cargo.toml') }}
+
+      - name: Prepare embedded Xray v26.3.27 & Wintun in bin/
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path "bin" | Out-Null
+          Invoke-WebRequest -Uri "https://github.com/XTLS/Xray-core/releases/download/v26.3.27/Xray-windows-64.zip" -OutFile "$env:RUNNER_TEMP\xray.zip"
+          Expand-Archive -Path "$env:RUNNER_TEMP\xray.zip" -DestinationPath "bin" -Force
+          Invoke-WebRequest -Uri "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/wintun.dll" -OutFile "bin\wintun.dll"
+          Get-ChildItem "bin" | Select-Object Name, Length
+
+      - name: Build TunnelX Windows Release Binary
+        working-directory: src-tauri
+        shell: pwsh
+        run: |
+          cargo build --release
+          Copy-Item "target\release\TunnelX.exe" "..\TunnelX.exe" -Force
+          Copy-Item "target\release\TunnelX.exe" "..\TunnelX-Windows-Portable.exe" -Force
+          Copy-Item "target\release\TunnelX.exe" "..\TunnelX-Setup.exe" -Force
+
+      - name: Publish Windows Binaries to Latest Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: pwsh
+        run: |
+          $tag = "v2.6.5"
+          try {
+            $fetched = gh release view --repo ZazaFather/tunnelx-releases --json tagName -q .tagName
+            if ($fetched) { $tag = $fetched.Trim() }
+          } catch {}
+          gh release upload $tag TunnelX.exe TunnelX-Windows-Portable.exe TunnelX-Setup.exe --repo ZazaFather/tunnelx-releases --clobber
+
+      - name: Upload Windows Release Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: TunnelX-Windows-v2.6.5
+          path: |
+            TunnelX.exe
+            TunnelX-Windows-Portable.exe
+            TunnelX-Setup.exe
+          retention-days: 30
