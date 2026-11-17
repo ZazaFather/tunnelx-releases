@@ -29,11 +29,15 @@ jobs:
 
       - name: Set up Android SDK & Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.7'
 
-      - name: Ensure Android SDK Platform 34
+      - name: Ensure Android SDK Platform 34 & libv2ray.aar
         run: |
           yes | "${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
           "${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager" "platform-tools" "platforms;android-34" "build-tools;34.0.0" >/dev/null
+          mkdir -p android/app/libs
+          curl -fsSL "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/libv2ray.aar" -o android/app/libs/libv2ray.aar
 
       - name: Sync dist/index.html into Android assets
         run: |
