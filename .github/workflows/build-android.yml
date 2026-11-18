@@ -39,10 +39,9 @@ jobs:
           mkdir -p android/app/libs
           curl -fsSL "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/libv2ray.aar" -o android/app/libs/libv2ray.aar
 
-      - name: Sync dist/index.html into Android assets
+      - name: Prepare Android Native Assets Directory
         run: |
           mkdir -p android/app/src/main/assets
-          cp dist/index.html android/app/src/main/assets/index.html
 
       - name: Prepare Release Keystore
         env:

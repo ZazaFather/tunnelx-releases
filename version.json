@@ -1,10 +1,10 @@
 {
-    "build": 2660,
+    "build": 2661,
     "version": "2.6.5",
     "setupUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-Setup.exe",
-    "publishedAt": "2026-11-18T10:38:00Z",
+    "publishedAt": "2026-11-18T12:40:00Z",
     "downloadUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-Windows-Portable.exe",
     "apkUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX.apk",
     "dmgUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-macOS.dmg",
-    "notes": "Обновление v2.6.5 (2660): нативная 60 FPS доводка шторки локаций через системный CoreAnimation даже в режиме энергосбережения iOS, переработанный экран «Управление аккаунтом» в стиле Apple iOS Settings (единая модульная сетка со сворачиванием списка устройств, без лишних подписей и линий) и нативный iOS Action Sheet для подтверждения удаления аккаунта."
+    "notes": "Обновление v2.6.5 (2661): полный переход на 100% нативный интерфейс и автономный 3D-движок без WebView на всех 4 платформах (iOS/iPadOS UIKit + Metal, macOS AppKit/SwiftUI + Metal, Android Native Views + OpenGL ES, Windows Native Rust GPU eframe/glow), честные 60–120 FPS даже в режиме энергосбережения iOS, эталонная пружина шторки локаций, мгновенная прокрутка серверов без микрофризов, плавная анимация отвязки устройств и аккуратное модальное подтверждение удаления аккаунта с чекбоксом."
 }
