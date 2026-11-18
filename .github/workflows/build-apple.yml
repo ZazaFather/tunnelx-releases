@@ -50,6 +50,7 @@ jobs:
           APPLE_DEVID_CERT_B64: ${{ secrets.APPLE_DEVID_CERT_B64 }}
           APPLE_PROVISION_MAIN_B64: ${{ secrets.APPLE_PROVISION_MAIN_B64 }}
           APPLE_PROVISION_EXT_B64: ${{ secrets.APPLE_PROVISION_EXT_B64 }}
+          APPLE_PROVISION_LIVEACTIVITY_B64: ${{ secrets.APPLE_PROVISION_LIVEACTIVITY_B64 }}
           ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
           ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
           ASC_PRIVATE_KEY_P8: ${{ secrets.ASC_PRIVATE_KEY_P8 }}

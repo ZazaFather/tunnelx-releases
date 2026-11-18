@@ -1,10 +1,10 @@
 {
-    "build": 2662,
+    "build": 2663,
     "version": "2.6.5",
     "setupUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-Setup.exe",
-    "publishedAt": "2026-11-18T16:35:00Z",
+    "publishedAt": "2026-11-18T18:35:00Z",
     "downloadUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-Windows-Portable.exe",
     "apkUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX.apk",
     "dmgUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-macOS.dmg",
-    "notes": "Обновление v2.6.5 (2662): 100% нативный интерфейс и автономный 3D-движок без WebView на всех 4 платформах, сохранение раскрытого состояния списка устройств в «Управление аккаунтом» без резкого сворачивания при повторном открытии, плавная анимация кнопки «Пинг» (1.65 с), спокойная стеклянная кнопка «Войти с Apple» вторым пунктом после Telegram без залипания прозрачности при выходе и чистые названия устройств и локаций."
+    "notes": "Обновление v2.6.5 (2663): поддержка системного Dynamic Island и интерактивной Live Activity на экране блокировки iOS (с живым таймером, флагом и кнопкой быстрого отключения), плюс плавная адаптация верхней капсулы внутри приложения под Dynamic Island и «чёлку» (эффект жидкого островка-капли)."
 }
