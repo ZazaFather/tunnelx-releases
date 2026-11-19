@@ -1,10 +1,10 @@
 {
-    "build": 2665,
+    "build": 2666,
     "version": "2.6.5",
     "setupUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-Setup.exe",
-    "publishedAt": "2026-11-18T20:44:00Z",
+    "publishedAt": "2026-11-19T19:21:00Z",
     "downloadUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-Windows-Portable.exe",
     "apkUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX.apk",
     "dmgUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-macOS.dmg",
-    "notes": "Обновление v2.6.5 (2664): обновлённый Dynamic Island в стиле Apple с анимацией «Гипертуннель» и упругим свайпом при открытии локаций, бесшовный переход в системный Dynamic Island / Live Activity при сворачивании приложения, чистая шапка без дублирования для iPhone без острова и идеальная 120 Гц плавность шторки."
+    "notes": "Обновление v2.6.5 (2666): нативные виджеты iOS в стиле «Тактильный тумблер» (Small 2×2 с физическим переключателем VPN, Medium 4×2 с утопленным OLED-экраном и тумблерами Туннель / Обход БС, Lock Screen 1×1 и кнопка Пункта управления iOS 18)."
 }
