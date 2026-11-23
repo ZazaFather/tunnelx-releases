@@ -1,10 +1,10 @@
 {
-    "build": 2669,
-    "version": "2.6.7",
+    "build": 2670,
+    "version": "2.6.8",
     "setupUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-Setup.exe",
-    "publishedAt": "2026-11-23T13:18:00Z",
+    "publishedAt": "2026-11-23T14:11:28Z",
     "downloadUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-Windows-Portable.exe",
     "apkUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX.apk",
     "dmgUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-macOS.dmg",
-    "notes": "Обновление v2.6.7 (2669): возвращён оригинальный плавный интерфейс TunnelX (WebView2) с сохранёнными исправлениями Xray, живых скоростей (api-in), стабильности Wintun и распаковки ядра."
+    "notes": "Обновление v2.6.8 (2670): исправлена загрузка списка устройств в «Управлении аккаунтом» (повтор запроса, резервный кеш и точный текст ошибки), добавлено отображение Apple ID и исправлено определение Google/почты с живым обновлением, адаптирована сетка и перетаскивание окна при растягивании."
 }
