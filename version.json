@@ -1,10 +1,10 @@
 {
-    "build": 2666,
+    "build": 2667,
     "version": "2.6.5",
     "setupUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-Setup.exe",
-    "publishedAt": "2026-11-19T19:21:00Z",
+    "publishedAt": "2026-11-23T12:43:00Z",
     "downloadUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-Windows-Portable.exe",
     "apkUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX.apk",
     "dmgUrl": "https://github.com/ZazaFather/tunnelx-releases/releases/download/v2.6.5/TunnelX-macOS.dmg",
-    "notes": "Обновление v2.6.5 (2666): нативные виджеты iOS в стиле «Тактильный тумблер» (Small 2×2 с физическим переключателем VPN, Medium 4×2 с утопленным OLED-экраном и тумблерами Туннель / Обход БС, Lock Screen 1×1 и кнопка Пункта управления iOS 18)."
+    "notes": "Обновление v2.6.5 (2667): исправлен краш Windows в трее (muda RefCell), возвращена верхняя панель и статусы поверх 3D-сферы, починены живые скорости (api-in), стабильность Wintun-адаптера и распаковка xray.exe."
 }
